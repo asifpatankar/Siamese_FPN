@@ -11,8 +11,8 @@ def Siamese_FPN():
     model_1_Input = Input(shape=(256, 256, 3), name='input_1')
     model_2_Input = Input(shape=(256, 256, 3), name='input_2')
 
-    model_1 = sm.FPN(BACKBONE, classes=1, activation='sigmoid',encoder_weights=None,input_shape=(input_size[0],input_size[0],3))
-    model_2 = sm.FPN(BACKBONE, classes=1, activation='sigmoid',encoder_weights=None,input_shape=(input_size[0],input_size[0],3))
+    model_1 = sm.FPN(BACKBONE, classes=1, activation='sigmoid',encoder_weights=None,input_shape=(input_size[0],input_size[0], 3))
+    model_2 = sm.FPN(BACKBONE, classes=1, activation='sigmoid',encoder_weights=None,input_shape=(input_size[0],input_size[0], 3))
 
     #Encoder_1
 
